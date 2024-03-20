@@ -15,6 +15,7 @@
 		500987EA2BA890B400F3132B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 500987E82BA890B400F3132B /* LaunchScreen.storyboard */; };
 		500987F22BA89C3E00F3132B /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500987F12BA89C3E00F3132B /* QuestionViewController.swift */; };
 		500987F42BA89C5800F3132B /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500987F32BA89C5800F3132B /* ResultsViewController.swift */; };
+		5063AE1E2BAB514400CD9D5B /* Questions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5063AE1D2BAB514400CD9D5B /* Questions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		500987EB2BA890B400F3132B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		500987F12BA89C3E00F3132B /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
 		500987F32BA89C5800F3132B /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
+		5063AE1D2BAB514400CD9D5B /* Questions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Questions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				500987DF2BA890B000F3132B /* SceneDelegate.swift */,
 				500987E12BA890B000F3132B /* IntroductionViewController.swift */,
 				500987E32BA890B000F3132B /* Main.storyboard */,
+				5063AE1D2BAB514400CD9D5B /* Questions.swift */,
 				500987F12BA89C3E00F3132B /* QuestionViewController.swift */,
 				500987F32BA89C5800F3132B /* ResultsViewController.swift */,
 				500987E62BA890B400F3132B /* Assets.xcassets */,
@@ -147,6 +150,7 @@
 				500987E22BA890B000F3132B /* IntroductionViewController.swift in Sources */,
 				500987DE2BA890B000F3132B /* AppDelegate.swift in Sources */,
 				500987F22BA89C3E00F3132B /* QuestionViewController.swift in Sources */,
+				5063AE1E2BAB514400CD9D5B /* Questions.swift in Sources */,
 				500987F42BA89C5800F3132B /* ResultsViewController.swift in Sources */,
 				500987E02BA890B000F3132B /* SceneDelegate.swift in Sources */,
 			);
