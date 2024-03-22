@@ -103,10 +103,10 @@
             </objects>
             <point key="canvasLocation" x="-815" y="-154"/>
         </scene>
-        <!--View Controller-->
+        <!--Question View Controller-->
         <scene sceneID="Jrc-NJ-dr9">
             <objects>
-                <viewController id="uMM-xR-1cc" sceneMemberID="viewController">
+                <viewController id="uMM-xR-1cc" customClass="QuestionViewController" customModule="PersonilityQuiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZuM-LA-p8O">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -213,13 +213,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="k7b-Bp-17S">
-                                <rect key="frame" x="17.666666666666657" y="355.66666666666669" width="358" height="130.66666666666669"/>
+                                <rect key="frame" x="5.6666666666666572" y="355.66666666666669" width="382" height="130.66666666666669"/>
                                 <subviews>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="nk5-3A-igD">
-                                        <rect key="frame" x="-2" y="0.0" width="362" height="31"/>
+                                        <rect key="frame" x="-2" y="0.0" width="386" height="31"/>
                                     </slider>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="Bov-Jw-sun">
-                                        <rect key="frame" x="0.0" y="53" width="358" height="20.333333333333329"/>
+                                        <rect key="frame" x="0.0" y="53" width="382" height="20.333333333333329"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WD8-JM-GhF">
                                                 <rect key="frame" x="0.0" y="0.0" width="41.333333333333336" height="20.333333333333332"/>
@@ -228,7 +228,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h5b-pV-vrs">
-                                                <rect key="frame" x="316.66666666666663" y="0.0" width="41.333333333333314" height="20.333333333333332"/>
+                                                <rect key="frame" x="340.66666666666663" y="0.0" width="41.333333333333314" height="20.333333333333332"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -236,7 +236,7 @@
                                         </subviews>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QpE-nK-bhQ">
-                                        <rect key="frame" x="0.0" y="96.333333333333314" width="358" height="34.333333333333343"/>
+                                        <rect key="frame" x="0.0" y="96.333333333333314" width="382" height="34.333333333333343"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Submit Answer"/>
                                     </button>
@@ -266,15 +266,30 @@
                             <constraint firstItem="58e-4a-Fxc" firstAttribute="leading" secondItem="3iV-3A-mak" secondAttribute="leading" constant="20" id="j1f-tQ-8hd"/>
                             <constraint firstItem="NM6-aw-GwP" firstAttribute="centerY" secondItem="ZuM-LA-p8O" secondAttribute="centerY" id="jnC-yd-f0j"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="e4n-If-rXZ"/>
-                                <exclude reference="NM6-aw-GwP"/>
-                            </mask>
-                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="cVZ-wL-Bb9"/>
                     <connections>
+                        <outlet property="Label" destination="58e-4a-Fxc" id="MQp-YI-jbO"/>
+                        <outlet property="horizontalSlider1" destination="nk5-3A-igD" id="iPm-cb-JVG"/>
+                        <outlet property="lastStack" destination="NM6-aw-GwP" id="IEL-xq-hhl"/>
+                        <outlet property="multiLabel1" destination="xBG-56-xK6" id="GCZ-ia-9Bv"/>
+                        <outlet property="multiLabel2" destination="BzB-Az-FyO" id="hQf-bQ-4lw"/>
+                        <outlet property="multiLabel3" destination="ii6-g6-qra" id="fRP-2D-V6D"/>
+                        <outlet property="multiLabel4" destination="58e-4a-Fxc" id="Rg5-bC-a5H"/>
+                        <outlet property="multiSwitch1" destination="FVW-dC-zsH" id="snG-zO-hiV"/>
+                        <outlet property="multiSwitch2" destination="Lji-jb-IOc" id="4bP-bt-uar"/>
+                        <outlet property="multiSwitch3" destination="3wB-l3-GJ4" id="bkE-ct-cPH"/>
+                        <outlet property="multiSwitch4" destination="emv-G3-9hd" id="Jcd-jL-15A"/>
+                        <outlet property="nextStack" destination="e4n-If-rXZ" id="e2Z-tP-Q03"/>
+                        <outlet property="questionLabel" destination="58e-4a-Fxc" id="o9O-Cf-Jr9"/>
+                        <outlet property="rangedLabel1" destination="WD8-JM-GhF" id="eLK-JR-Ge9"/>
+                        <outlet property="rangedLabel2" destination="h5b-pV-vrs" id="zcZ-SC-yc3"/>
+                        <outlet property="rangedSlider1" destination="LK1-Hs-1KU" id="nUg-PB-cq3"/>
+                        <outlet property="singleButton1" destination="VtS-gQ-Qjg" id="6tb-Hq-lUM"/>
+                        <outlet property="singleButton2" destination="2Bd-ev-mpE" id="4gr-O2-NmY"/>
+                        <outlet property="singleButton3" destination="QiC-Tm-nhU" id="qDO-zb-rBi"/>
+                        <outlet property="singleButton4" destination="Ohg-tx-HzC" id="BAu-nA-xdT"/>
+                        <outlet property="singleStackView" destination="k7b-Bp-17S" id="Gvi-s2-UsC"/>
                         <segue destination="Bop-jC-ghz" kind="show" id="a9O-Iy-WWO"/>
                     </connections>
                 </viewController>
